@@ -8,9 +8,31 @@ from io import BytesIO
 from fastai import *
 from fastai.vision import *
 
-model_file_url = 'https://www.dropbox.com/s/y4kl2gv1akv7y4i/stage-2.pth?raw=1'
+model_file_url = 'https://drive.google.com/open?id=1CtTyu9JdKx99LlhdMw_GRla0SWtmuqyI'
 model_file_name = 'model'
-classes = ['black', 'grizzly', 'teddys']
+classes = ['Action_painting',
+ 'Analytical_Cubism',
+ 'Art_Nouveau_Modern',
+ 'Baroque',
+ 'Color_Field_Painting',
+ 'Contemporary_Realism',
+ 'Cubism',
+ 'Early_Renaissance',
+ 'Expressionism',
+ 'Fauvism',
+ 'Impressionism',
+ 'Mannerism_Late_Renaissance',
+ 'Minimalism',
+ 'Naive_Art_Primitivism',
+ 'New_Realism',
+ 'Northern_Renaissance',
+ 'Pointillism',
+ 'Pop_Art',
+ 'Post_Impressionism',
+ 'Realism',
+ 'Rococo',
+ 'Romanticism',
+ 'Ukiyo_e']
 path = Path(__file__).parent
 
 app = Starlette()
