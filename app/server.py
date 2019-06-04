@@ -8,8 +8,8 @@ from io import BytesIO
 from fastai import *
 from fastai.vision import *
 
-model_file_url = 'https://drive.google.com/open?id=1hVcNufZnHhyoC4c-VciSY-hI7chUU5aj'
-model_file_name = 'model'
+export_file_url = 'https://drive.google.com/open?id=1hVcNufZnHhyoC4c-VciSY-hI7chUU5aj'
+export_file_name = 'model'
 # classes = ['Action_painting',
 #  'Analytical_Cubism',
 #  'Art_Nouveau_Modern',
