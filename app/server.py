@@ -8,31 +8,31 @@ from io import BytesIO
 from fastai import *
 from fastai.vision import *
 
-model_file_url = 'https://drive.google.com/open?id=1CtTyu9JdKx99LlhdMw_GRla0SWtmuqyI'
+model_file_url = 'https://drive.google.com/open?id=1hVcNufZnHhyoC4c-VciSY-hI7chUU5aj'
 model_file_name = 'model'
-classes = ['Action_painting',
- 'Analytical_Cubism',
- 'Art_Nouveau_Modern',
- 'Baroque',
- 'Color_Field_Painting',
- 'Contemporary_Realism',
- 'Cubism',
- 'Early_Renaissance',
- 'Expressionism',
- 'Fauvism',
- 'Impressionism',
- 'Mannerism_Late_Renaissance',
- 'Minimalism',
- 'Naive_Art_Primitivism',
- 'New_Realism',
- 'Northern_Renaissance',
- 'Pointillism',
- 'Pop_Art',
- 'Post_Impressionism',
- 'Realism',
- 'Rococo',
- 'Romanticism',
- 'Ukiyo_e']
+# classes = ['Action_painting',
+#  'Analytical_Cubism',
+#  'Art_Nouveau_Modern',
+#  'Baroque',
+#  'Color_Field_Painting',
+#  'Contemporary_Realism',
+#  'Cubism',
+#  'Early_Renaissance',
+#  'Expressionism',
+#  'Fauvism',
+#  'Impressionism',
+#  'Mannerism_Late_Renaissance',
+#  'Minimalism',
+#  'Naive_Art_Primitivism',
+#  'New_Realism',
+#  'Northern_Renaissance',
+#  'Pointillism',
+#  'Pop_Art',
+#  'Post_Impressionism',
+#  'Realism',
+#  'Rococo',
+#  'Romanticism',
+#  'Ukiyo_e']
 path = Path(__file__).parent
 
 app = Starlette()
@@ -47,11 +47,11 @@ async def download_file(url, dest):
             with open(dest, 'wb') as f: f.write(data)
 
 async def setup_learner():
-    await download_file(model_file_url, path/'models'/f'{model_file_name}.pth')
-    data_bunch = ImageDataBunch.single_from_classes(path, classes,
-        tfms=get_transforms(), size=224).normalize(imagenet_stats)
-    learn = cnn_learner(data_bunch, models.resnet34, pretrained=False)
-    learn.load(model_file_name)
+    await download_file(model_file_url, path/'models'/f'{model_file_name}.pkl')
+    # data_bunch = ImageDataBunch.single_from_classes(path, classes,
+    #     tfms=get_transforms(), size=224).normalize(imagenet_stats)
+    # learn = cnn_learner(data_bunch, models.resnet34, pretrained=False)
+    learn = load_learner(path, export_file_name)
     return learn
 
 loop = asyncio.get_event_loop()
