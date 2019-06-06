@@ -1,4 +1,4 @@
-![paintings-classifier](https://cdn.unifiedcommerce.com/content/product/large/724819260348-0.jpg)
+![paintings-classifier](https://c.pxhere.com/photos/c4/0e/people_museum_bench_couple_paintings_crocker-394893.jpg!d)
 
 <!-- [![FVCproductions](https://avatars1.githubusercontent.com/u/4284691?v=3&s=200)](http://fvcproductions.com) -->
 
