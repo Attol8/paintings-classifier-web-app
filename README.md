@@ -37,8 +37,6 @@ this model reached  accuracy(%) in style classification while WR tan et al. CNN-
 * Google Cloud Storage
 * Fastai Library
 
-- Clone this repo to your local machine using `https://github.com/fvcproductions/SOMEREPO`
-
 ### Production
 
 The model has been put into production by deploying a web app on GCP. The following <a href="https://course.fast.ai/deployment_google_app_engine.html">guide</a> has been used. 
