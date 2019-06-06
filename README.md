@@ -4,7 +4,9 @@
 
 # Paintings Classifier Web App
 
-> A clean Web app deployed on GCP using fastai to classify paintings styles 
+A clean Web app deployed on GCP using fastai to classify paintings styles 
+
+Click <a href="https://rare-habitat-240317.appspot.com/">here</a> if you want to try the app <span>&#128072;</span> 
 
 ## Table of Contents 
 
@@ -39,6 +41,4 @@ this model reached  accuracy(%) in style classification while WR tan et al. CNN-
 
 ### Production
 
-The model has been put into production by deploying a web app on GCP. The following <a href="https://course.fast.ai/deployment_google_app_engine.html">guide<a> has been used. 
-
-CLick here if you want to try the app <span>&#128072;</span> 
+The model has been put into production by deploying a web app on GCP. The following <a href="https://course.fast.ai/deployment_google_app_engine.html">guide</a> has been used. 
