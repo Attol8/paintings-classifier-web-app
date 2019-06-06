@@ -6,8 +6,6 @@
 
 > A clean Web app deployed on GCP using fastai to classify paintings styles 
 
-[![INSERT YOUR GRAPHIC HERE](https://imgur.com/kLlWTO6)]()
-
 ## Table of Contents 
 
 - [Model Training](#Model-Training)
@@ -43,4 +41,4 @@ this model reached  accuracy(%) in style classification while WR tan et al. CNN-
 
 The model has been put into production by deploying a web app on GCP. The following <a href="https://course.fast.ai/deployment_google_app_engine.html">guide<a> has been used. 
 
-CLick here if you want to try the app <p><span>&#128072;</span> No skin tone</p> 
+CLick here if you want to try the app <span>&#128072;</span> 
